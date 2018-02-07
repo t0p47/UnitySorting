@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StupidSort : P_AbstractSort {
+public class StupidSort : P_AbstractShareSort {
 
     void Update() {
 
         if (Input.GetKeyDown(KeyCode.Y) && !coroutineWorked) {
             Debug.Log("Y pressed ");
 
-            changeBallsPlace(arrayBalls[1].transform,arrayBalls[2].transform);
+            //changeBallsPlace(arrayBalls[1].transform,arrayBalls[2].transform);
 
         }
         if (Input.GetKeyDown(KeyCode.R)) {
